@@ -20,7 +20,7 @@
 
         roscd find_object_2d/
 
-4. Create a file called `stereo.launch` in the directory where find_object_2d was installed.
+4. Create a file called `stereo.launch` in the directory where find_object_2d was installed and include the following:
 
 ```
 <launch>
@@ -42,6 +42,7 @@
     </group>
 </launch>
 ```
+
 
 5. Modify `image` if needed and `session_path` accordingly to your setup.
 
