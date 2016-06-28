@@ -59,12 +59,13 @@
 8. Save the session by going to file->save session. Check that the name has to be *.bin. This saves all the objects learned in previous steps.
 
 9. Once all the objects have been 'learned' (preferably from different angles), create one text file per object and include in each one the ID number captured by the GUI for each angle. For example, if the captured images for object named 'phone' go from 0 to 2 and for 'fan' go from 3 to 5, then:
+
         phone.txt should look like this:
         0
         1
         2
         
-        fan.tx:
+        fan.tx should look like this:
         3
         4
         5
