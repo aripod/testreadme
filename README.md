@@ -112,6 +112,6 @@
         ::objectdetection::connect_port CameraR /stereo/right/image_rect_color
         ::objectdetection::connect_port inObjectsR find_objects_2d_Right/objectsStamped
 
-16. Run the detection activity
+18. Run the detection activity
 
         ::objectdetection::Start {objectPath /path_to/objects/textfiles/}
