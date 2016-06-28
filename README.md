@@ -3,8 +3,9 @@
   1. How to install find_object_2d
 
     In a terminal, type: 
-
+        ```
         > sudo apt-get install ros-indigo-find-object-2d
+        ```
 
 2. Clone this repository and compile the genom3 module.
     To compile the module, enter the following commands:
