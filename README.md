@@ -41,7 +41,7 @@
             </group>
         </launch>
 
-5. Modify `image` if needed and `session_path` accordingly to your setup.
+5. Modify `image` if needed and `session_path` accordingly to your setup (after finishing step 8).
 
 6. Run ros
         roscore &
