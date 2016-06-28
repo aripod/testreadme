@@ -20,7 +20,7 @@
 
         roscd find_object_2d/
 
-4. Create a file called `stereo.launch` in the directory where find_object_2d was installed and include the following:
+4. Create a file called `stereo.launch` in the **launch** directory where find_object_2d was installed and include the following:
 
         <launch>
         	<!-- Nodes -->
