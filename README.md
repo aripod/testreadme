@@ -79,16 +79,20 @@
   2. Change the **session_path** parameters for both nodes to match the path to your session file (*.bin) saved in step 8.
 
 12. Launch the stereo.launch file. It will start two instances of the find_object_2d (without the GUI)
+
         roslaunch find_object_2d stereo.launch 
 
-12 - Run the genom3 module
-    > objectdetection-ros -b
+13. Run the genom3 module
 
-13 - Run genomix
-    > genomixd &
+        objectdetection-ros -b
 
-14 - Start TCL
-    > eltclsh
+14. Run genomix
+
+        genomixd &
+
+15. Start TCL
+
+        eltclsh
 
 15 - Load objecdetection module
     > package require genomix
