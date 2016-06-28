@@ -18,11 +18,32 @@
 
 3. Go to the directory where find_object_2d was installed:
 
-        ```
         roscd find_object_2d/
-        ```
 
-4 - Copy stereo.launch from this repository to the directory where find_object_2d was installed.
+4. Create a file called `stereo.launch` in the directory where find_object_2d was installed.
+
+```
+<launch>
+	<!-- Nodes -->
+    <group ns="find_objects_2d_Left">
+	    <node name="find_object_2d" pkg="find_object_2d" type="find_object_2d" output="screen">
+		    <remap from="image" to="/stereo/left/image_rect_color"/>
+		    <param name="gui" value="false" type="bool"/>
+		    <param name="session_path" value=/home/USER_PATH/objectdetection/sessionOBJECTS.bin" type="str"/>
+	    </node>
+    </group>
+
+    <group ns="find_objects_2d_Right">
+	    <node name="find_object_2d" pkg="find_object_2d" type="find_object_2d" output="screen">
+		    <remap from="image" to="/stereo/right/image_rect_color"/>
+		    <param name="gui" value="false" type="bool"/>
+		    <param name="session_path" value=/home/USER_PATH/objectdetection/sessionOBJECTS.bin" type="str"/>
+	    </node>
+    </group>
+</launch>
+```
+
+5. Modify `image` if needed and `session_path` accordingly to your setup.
 
 5 - Run ros
     > roscore &
