@@ -6,19 +6,16 @@
         sudo apt-get install ros-indigo-find-object-2d
         ```
 
-2. Clone this repository and compile the genom3 module.
-
-    To compile the module, enter the following commands:
-
-        ```
-        genom3 skeleton -l c++ -i objectdetection.gen
-        ./bootstrap.sh
-        mkdir build
-        cd build
-        ../configure --prefix=$ROBOTPKG_BASE --with-templates=ros/server,ros/client/c
-        make
-        make install
-        ```
+2. Clone this repository and compile the genom3 module. To do so, enter the following commands:
+```
+genom3 skeleton -l c++ -i objectdetection.gen
+./bootstrap.sh
+mkdir build
+cd build
+../configure --prefix=$ROBOTPKG_BASE --with-templates=ros/server,ros/client/c
+make
+make install
+```
 
 3. Go to the directory where find_object_2d was installed:
 
