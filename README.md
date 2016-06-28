@@ -94,17 +94,17 @@
 
         eltclsh
 
-15 - Load objecdetection module
-    > package require genomix
-    > ::genomix::connect
-    > genomix1 load objectdetection
+14. Load objecdetection module
+        package require genomix
+        ::genomix::connect
+        genomix1 load objectdetection
 
-16 - Connect the necessary ports (Keep in mind that CameraL and CameraR have to comply with your cameras's setting)
-    > ::objectdetection::connect_port RightCameraParameters /stereo/right/camera_info
-    > ::objectdetection::connect_port CameraL /stereo/left/image_rect_color
-    > ::objectdetection::connect_port inObjectsL find_objects_2d_Left/objectsStamped
-    > ::objectdetection::connect_port CameraR /stereo/right/image_rect_color
-    > ::objectdetection::connect_port inObjectsR find_objects_2d_Right/objectsStamped
+15. Connect the necessary ports (Keep in mind that CameraL and CameraR have to comply with your cameras's setting)
+        ::objectdetection::connect_port RightCameraParameters /stereo/right/camera_info
+        ::objectdetection::connect_port CameraL /stereo/left/image_rect_color
+        ::objectdetection::connect_port inObjectsL find_objects_2d_Left/objectsStamped
+        ::objectdetection::connect_port CameraR /stereo/right/image_rect_color
+        ::objectdetection::connect_port inObjectsR find_objects_2d_Right/objectsStamped
 
-17 - Run the detection activity
-    > ::objectdetection::Start {objectPath /path_to/objects/textfiles/}
+16. Run the detection activity
+        ::objectdetection::Start {objectPath /path_to/objects/textfiles/}
