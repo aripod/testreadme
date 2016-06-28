@@ -44,6 +44,7 @@
 5. Modify `image` if needed and `session_path` accordingly to your setup (after finishing step 8).
 
 6. Run ros
+
         roscore &
 
 7. "Learn" all the objects that you want to detect.
@@ -53,15 +54,15 @@
         ```
         rosrun find_object_2d find_object_2d image:=/stereo/left/image_rect_color
         ```
-   3. On the GUI, check that nextObjID under 'General' is set to 0.
+   3. On the GUI, check that *nextObjID* under 'General' is set to 0.
    4. Go to  Edit->'Add object from scene...'
    5. When you are satisfied with the position of the object in the scene, click 'Take picture'.
    6. With the mouse, select the region of the object you want to detect (it's better that it contains a large number of keypoints to have a robust detection afterwards), click next and then end.
-   7. It is recommended to follow steps 7.iii to 7.vi for each object from several angles.
+   7. It is recommended to follow steps 7.iii to 7.vi for each object from several angles and distances.
 
 8. Save the session by going to file->save session. Check that the name has to be *.bin. This saves all the objects learned in previous steps.
 
-9. Once all the objects have been 'learned' (preferably from different angles), create one text file per object and include in each one the ID number captured by the GUI for each angle. For example, if the captured images for object named 'phone' go from 0 to 2 and for 'fan' go from 3 to 5, then:
+9. Once all the objects have been 'learned' (preferably from different angles and distances), create one text file per object and include in each one the ID number captured by the GUI for each angle. For example, if the captured images for object named 'phone' go from 0 to 2 and for 'fan' go from 3 to 5, then:
 
         phone.txt should look like this:
         0
@@ -98,6 +99,7 @@
         eltclsh
 
 14. Load objecdetection module
+
         package require genomix
         ::genomix::connect
         genomix1 load objectdetection
@@ -111,4 +113,5 @@
         ::objectdetection::connect_port inObjectsR find_objects_2d_Right/objectsStamped
 
 16. Run the detection activity
+
         ::objectdetection::Start {objectPath /path_to/objects/textfiles/}
