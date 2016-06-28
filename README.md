@@ -70,13 +70,13 @@
         4
         5
 
-    Keep in mind that in each file, only one ID per line should be written and there should not be an empty line at the end.
+    *Keep in mind that in each file, only one ID per line should be written and there should not be an empty line at the end.*
 
-9 - All the .txt files have to be saved in the same folder.
+10. All the .txt files have to be saved **in the same folder**.
 
-10 - Edit stereo.launch so it complies with your setting:
-    9.1 Check that the two image topics remaps are according to your left and right topics from your cameras.
-    9.2 Change the session_path parameters for both nodes to match the path to your session file (*.bin) saved in step 7.
+11. Edit stereo.launch so it complies with your setting:
+  1. Check that the two image topics remaps are according to your left and right topics from your cameras.
+  2. Change the **session_path** parameters for both nodes to match the path to your session file (*.bin) saved in step 8.
 
 11 - Launch the stereo.launch file. It will start two instances of the find_object_2d (without the GUI)
     > roslaunch find_object_2d stereo.launch 
