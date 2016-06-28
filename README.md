@@ -49,6 +49,7 @@
 7. "Learn" all the objects that you want to detect.
   1. Check that your (mono) camera is publishing its output to a ros topic (sensor_msgs/Image message).
   2. Considering that your camera publishes to /stereo/left/image_rect_color, launch the **find_object_2d gui**, keeping in mind that the image toppic has to be remapped acordignly to your settings.
+
         ```
         rosrun find_object_2d find_object_2d image:=/stereo/left/image_rect_color
         ```
