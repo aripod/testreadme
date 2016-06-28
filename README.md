@@ -51,6 +51,7 @@
   2. Considering that your camera publishes to /stereo/left/image_rect_color, launch the **find_object_2d gui**, keeping in mind that the image toppic has to be remapped acordignly to your settings.
 
         rosrun find_object_2d find_object_2d image:=/stereo/left/image_rect_color
+
    3. On the GUI, check that nextObjID under 'General' is set to 0.
    4. Go to  Edit->'Add object from scene...'
    5. When you are satisfied with the position of the object in the scene, click 'Take picture'.
