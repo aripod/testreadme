@@ -7,6 +7,7 @@
         ```
 
 2. Clone this repository and compile the genom3 module. To do so, enter the following commands:
+
         genom3 skeleton -l c++ -i objectdetection.gen
         ./bootstrap.sh
         mkdir build
