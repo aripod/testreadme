@@ -100,6 +100,7 @@
         genomix1 load objectdetection
 
 15. Connect the necessary ports (Keep in mind that CameraL and CameraR have to comply with your cameras's setting)
+
         ::objectdetection::connect_port RightCameraParameters /stereo/right/camera_info
         ::objectdetection::connect_port CameraL /stereo/left/image_rect_color
         ::objectdetection::connect_port inObjectsL find_objects_2d_Left/objectsStamped
