@@ -78,8 +78,8 @@
   1. Check that the two image topics remaps are according to your left and right topics from your cameras.
   2. Change the **session_path** parameters for both nodes to match the path to your session file (*.bin) saved in step 8.
 
-11 - Launch the stereo.launch file. It will start two instances of the find_object_2d (without the GUI)
-    > roslaunch find_object_2d stereo.launch 
+12. Launch the stereo.launch file. It will start two instances of the find_object_2d (without the GUI)
+        roslaunch find_object_2d stereo.launch 
 
 12 - Run the genom3 module
     > objectdetection-ros -b
